@@ -162,6 +162,10 @@ body {
   cursor: pointer;
 }
 
+.boddy-scroll-disable {
+  overflow: hidden;
+}
+
 /* MOBILE MENU MODAL */
 
 .mobile-menu-close-btn {
@@ -228,6 +232,52 @@ body {
   background: var(--c-light);
   color: var(--c-dark);
   padding: 10px 14px;
+}
+
+/*REQUEST RECEIVED MODAL*/
+.modal-request-received {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.request-received-container {
+  background: var(--c-light);
+  padding: 80px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.request-received-title {
+  color: var(--txt-c-accent);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.request-received-primary-msg {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.request-received-secondary-msg {
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  width: 185px;
+  margin: 0;
 }
 
 /* FRONT PAGE */
@@ -532,6 +582,7 @@ body {
 
 .team-projects .container {
   padding-bottom: 0;
+  overflow-x: hidden;
 }
 
 .team-projects-title {
@@ -543,7 +594,7 @@ body {
 .team-projects-title-bgd {
   position: absolute;
   top: -50px;
-  left: 113px;
+  left: 45px;
   font-weight: bold;
   font-size: 150px;
   line-height: 180px;
@@ -579,6 +630,7 @@ body {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .callback-form-title {
