@@ -27,7 +27,7 @@
   --mobile: calc(300px + var(--vertical-scroll));
   --tablet: calc(640px + var(--vertical-scroll));
   --desktop: calc(900px + var(--vertical-scroll));
-  --desktop-lg: calc(1146px + var(--vertical-scroll));
+  --desktop-lg: calc(1270px + var(--vertical-scroll));
 
   /* animation */
   --animation-fast: 0.1s;
@@ -100,6 +100,7 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -340,6 +341,19 @@ body {
 .front-page {
   width: 100%;
   background: var(--c-dark);
+}
+
+.front-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front-page-my-name {
@@ -1145,5 +1159,73 @@ body {
   }
   .footer-my-mail {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: var(--desktop-lg);
+  }
+  .tablet-element {
+    display: none;
+  }
+  .desktop-element {
+    display: block;
+  }
+  .front-page-profession {
+    font-size: 70px;
+    line-height: 84px;
+    width: 510px;
+    margin-left: -60px;
+    margin-bottom: 35px;
+  }
+  .experience-wrapper {
+    order: 1;
+  }
+  .front-page-main-info {
+    align-items: flex-start;
+    order: 2;
+    z-index: 2;
+  }
+  .front-page-description {
+    text-align: left;
+    margin-bottom: 65px;
+  }
+  .front-page-gallery-btn {
+    width: 387px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 90px;
+  }
+  .profession-part-2 {
+    margin-left: 60px;
+  }
+  .front-page-wrapper {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
+  }
+  .front-page-laptop {
+    position: absolute;
+    bottom: -145px;
+    right: 0;
+    z-index: 1;
+  }
+  .front-page-my-info {
+    order: 3;
+  }
+  .front-page-my-decr {
+    text-align: right;
+  }
+  .front-page-my-name {
+    margin-top: 0;
+  }
+  .experience-title {
+    text-align: left;
+  }
+  .experience-skill {
+    margin-left: 0;
   }
 }
