@@ -25,16 +25,32 @@
           <a href="" class="logo-link">
             <img src="img/goit-logo.svg" alt="GOIT logo" />
           </a>
+          <div class="desktop-element">
+            <div class="mobile-menu-items">
+              <a href="#about" class="mobile-menu-item">ABOUT</a>
+              <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+              <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+              <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+            </div>
+          </div>
+
           <div class="navigation-part">
             <a href="#callback-form" class="hire-me-btn">— HIRE ME</a>
-            <a href="" class="mobile-menu" id="mobile-menu-btn">
-              <i class="fas fa-bars"></i>
-            </a>
+            <div class="mobile-element tablet-element">
+              <a href="" class="mobile-menu" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
           </div>
         </nav>
 
         <div class="front-page-wrapper">
           <div class="front-page-main-info">
+            <img
+              src="img/my-photo.jpg"
+              alt="my-photo"
+              class="front-page-my-photo desktop-element"
+            />
             <h1 class="front-page-my-name">[alex tur]</h1>
 
             <h2 class="front-page-profession">
@@ -56,7 +72,12 @@
             <img
               src="img/my-photo.jpg"
               alt="my-photo"
-              class="front-page-my-photo table-element"
+              class="front-page-my-photo mobile-element tablet-element"
+            />
+            <img
+              src="img/my-photo.jpg"
+              alt="my-photo"
+              class="front-page-my-photo mobile-element"
             />
             <div class="front-page-about-me-container">
               <p class="front-page-my-decr mobile-element">
@@ -283,38 +304,54 @@
 
     <section class="about" id="about">
       <div class="container container-left">
-        <h3 class="section-title about-title">I code things from scratch_</h3>
-        <p class="about-descr">
-          <span>[and help to</span>
-          <span>create great web</span>
-          <span>apps]</span>
-        </p>
-        <div class="about-img-container">
-          <p class="about-img-text">
-            WEB
-            <img
-              src="img/web-apps-laptop.png"
-              alt="web apps laptop"
-              class="about-img"
-            />
+        <div class="about-content-wrapper">
+          <h3 class="section-title about-title">I code things from scratch_</h3>
+
+          <p class="about-descr mobile-element">
+            <span>[and help to</span>
+            <span>create great web</span>
+            <span>apps]</span>
+          </p>
+
+          <div class="tablet-element desktop-element">
+            <p class="about-descr">
+              <span>[and help to create</span>
+              <span> great web apps]</span>
+            </p>
+          </div>
+          <div class="about-img-container">
+            <p class="about-img-text">
+              WEB
+              <img
+                src="img/web-apps-laptop.png"
+                alt="web apps laptop"
+                class="about-img"
+              />
+            </p>
+          </div>
+          <p class="about-text mobile-element desktop-element">
+            / I will help you to create a high-performance Landing Page,
+            functional corporate website for your business, interactive web app
+            for SaaS, startup, or other services.
+          </p>
+          <p class="about-text tablet-element">
+            / I will help you to create a<br />
+            high-performance Landing Page,<br />
+            functional corporate website for your<br />
+            business, interactive web app for<br />
+            SaaS, startup, or other services.
+          </p>
+          <p class="about-text tablet-element desktop-element">
+            / My specialization is front-end development — client side of the
+            web. But I also have full-stack developer experience.
           </p>
         </div>
-        <p class="about-text mobile-element">
-          / I will help you to create a high-performance Landing Page,
-          functional corporate website for your business, interactive web app
-          for SaaS, startup, or other services.
-        </p>
-        <p class="about-text tablet-element desktop-element">
-          / I will help you to create a<br />
-          high-performance Landing Page,<br />
-          functional corporate website for your<br />
-          business, interactive web app for<br />
-          SaaS, startup, or other services.
-        </p>
-        <p class="about-text tablet-element desktop-element">
-          / My specialization is front-end development — client side of the web.
-          But I also have full-stack developer experience.
-        </p>
+        <div class="about-projects desktop-element">
+          <div class="about-projects-bar">
+            <p class="about-projects-count">10+</p>
+          </div>
+          <p class="about-projects-text">comleted projects</p>
+        </div>
       </div>
     </section>
 
@@ -324,104 +361,106 @@
           My personal _projects
         </h3>
 
-        <div class="personal-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+        <div class="personal-project-item-wrapper">
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/personal/full-stack.jpg"
+                alt="full stack website"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/personal/full-stack.jpg"
-              alt="full stack website"
-              class="personal-project-img"
-            />
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML5, CSS3, JS</span>
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="personal-project-full-stack-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="personal-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            <span>Technology: HTML5, CSS3, JS</span>
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="personal-project-full-stack-btn"
-          >
-            More details —
-          </button>
-        </div>
 
-        <div class="personal-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/personal/wedding.jpg"
+                alt="wedding website"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/personal/wedding.jpg"
-              alt="wedding website"
-              class="personal-project-img"
-            />
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML, CSS, JavaScript, PHP</span>
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="personal-project-wedding-project-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="personal-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            <span>Technology: HTML, CSS, JavaScript, PHP</span>
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="personal-project-wedding-project-btn"
-          >
-            More details —
-          </button>
-        </div>
 
-        <div class="personal-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/personal/pro-test.jpg"
+                alt="pro test website"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/personal/pro-test.jpg"
-              alt="pro test website"
-              class="personal-project-img"
-            />
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: React.js, Node.js</span>
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="personal-project-pro-test-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="personal-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            <span>Technology: React.js, Node.js</span>
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="personal-project-pro-test-btn"
-          >
-            More details —
-          </button>
-        </div>
 
-        <div class="personal-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+          <div class="personal-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/personal/goit.jpg"
+                alt="goit website"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/personal/goit.jpg"
-              alt="goit website"
-              class="personal-project-img"
-            />
+            <p class="personal-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              <span>Technology: HTML, CSS, JavaScript, Wordpress</span>
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="personal-project-goit-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="personal-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            <span>Technology: HTML, CSS, JavaScript, Wordpress</span>
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="personal-project-goit-btn"
-          >
-            More details —
-          </button>
         </div>
       </div>
     </section>
@@ -432,53 +471,55 @@
           <span class="team-projects-title-bgd">TEAM</span>
           Teamwork _projects
         </h3>
-        <div class="team-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+        <div class="team-project-item-wrapper">
+          <div class="team-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/team/questify.jpg"
+                alt="quetify app"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/team/questify.jpg"
-              alt="quetify app"
-              class="personal-project-img"
-            />
+            <p class="team-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              Technology: React.js, Node.js
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="team-project-questify-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="team-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            Technology: React.js, Node.js
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="team-project-questify-btn"
-          >
-            More details —
-          </button>
-        </div>
-        <div class="team-project-item">
-          <div class="personal-project-item-container">
-            <div class="projet-item-dot-container">
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
-              <div class="projet-item-dot"></div>
+          <div class="team-project-item">
+            <div class="personal-project-item-container">
+              <div class="projet-item-dot-container">
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+                <div class="projet-item-dot"></div>
+              </div>
+              <img
+                src="img/projects/team/it-test.jpg"
+                alt="it test app"
+                class="personal-project-img"
+              />
             </div>
-            <img
-              src="img/projects/team/it-test.jpg"
-              alt="it test app"
-              class="personal-project-img"
-            />
+            <p class="team-project-name">
+              <i class="fas fa-laptop-code personal-project-icon"></i>
+              Technology: React.js, Node.js
+            </p>
+            <button
+              class="personal-project-btn accent-btn"
+              id="team-project-it-test-btn"
+            >
+              More details —
+            </button>
           </div>
-          <p class="team-project-name">
-            <i class="fas fa-laptop-code personal-project-icon"></i>
-            Technology: React.js, Node.js
-          </p>
-          <button
-            class="personal-project-btn accent-btn"
-            id="team-project-it-test-btn"
-          >
-            More details —
-          </button>
         </div>
       </div>
     </section>

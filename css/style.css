@@ -978,9 +978,10 @@ body {
   }
 
   .front-page-profession {
-    margin-top: 20px;
+    margin: 20px 0 30px 0;
     font-size: 55px;
     line-height: 66px;
+    width: 410px;
   }
   .profession-part-1 {
     margin-right: 40px;
@@ -1178,6 +1179,7 @@ body {
     width: 510px;
     margin-left: -60px;
     margin-bottom: 35px;
+    z-index: 2;
   }
   .experience-wrapper {
     order: 1;
@@ -1186,10 +1188,22 @@ body {
     align-items: flex-start;
     order: 2;
     z-index: 2;
+    position: relative;
+    width: 387px;
   }
+
+  .front-page-my-photo {
+    position: absolute;
+    width: 256px;
+    z-index: 1;
+    right: -125px;
+    bottom: 330px;
+  }
+
   .front-page-description {
     text-align: left;
     margin-bottom: 65px;
+    z-index: 2;
   }
   .front-page-gallery-btn {
     width: 387px;
@@ -1227,5 +1241,114 @@ body {
   }
   .experience-skill {
     margin-left: 0;
+  }
+
+  /* Galleries */
+
+  .team-project-item-wrapper,
+  .personal-project-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    width: calc(50%-20px);
+  }
+
+  .team-project-item:nth-child(odd),
+  .personal-project-item:nth-child(odd) {
+    margin: 0 20px 40px 0;
+  }
+
+  .team-project-item:nth-child(even),
+  .personal-project-item:nth-child(even) {
+    margin: 0 0 40px 20px;
+  }
+
+  .team-projects-title,
+  .team-projects-titlec {
+    font-size: 70px;
+    line-height: 84px;
+    width: 530px;
+  }
+  .team-projects-title-bdg {
+    font-size: 250px;
+    line-height: 300px;
+    top: 35px;
+    left: 274px;
+  }
+  .mobile-menu-items {
+    flex-direction: row;
+    margin-left: 120px;
+  }
+  .mobile-menu-item {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
+  .mobile-menu-item:last-child {
+    margin-right: 35px;
+  }
+  .front-page-main-info {
+    width: 387px;
+  }
+
+  .about-title {
+    font-size: 70px;
+    line-height: 84px;
+    width: 620px;
+    margin-top: 0;
+  }
+  .about-text {
+    width: 406px;
+  }
+
+  .about-text:last-child {
+    width: 388px;
+    margin: 0;
+  }
+
+  .about-content-wrapper {
+    position: relative;
+  }
+
+  .about .container {
+    flex-direction: row;
+    padding: 135px 10px;
+    justify-content: space-between;
+  }
+  .about-projects-bar {
+    background: var(--c-accent);
+    width: 159px;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 5 px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+  }
+  .about-projects-count {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 78px;
+    color: var(--txt-c-light);
+    margin: 0;
+  }
+  .about-projects-text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 135%;
+    color: var(--txt-c-dark);
+    text-transform: uppercase;
+    width: 125px;
+  }
+
+  .about-img-text {
+    font-size: 250px;
+    line-height: 300px;
+    right: -223px;
+    top: -23px;
+    z-index: 1;
   }
 }
