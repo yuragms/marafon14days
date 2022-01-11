@@ -733,6 +733,11 @@ body {
   margin: 0 0 30px 0;
 }
 
+.callback-form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .callback-form-input {
   background: transparent;
   border: none;
@@ -1350,5 +1355,36 @@ body {
     right: -223px;
     top: -23px;
     z-index: 1;
+  }
+
+  .callback-form-title,
+  .callback-form-descr {
+    width: 100%;
+  }
+
+  .callback-form-descr {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .callback-form-input-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .callback-form-input {
+    width: 30%;
+    max-width: 260px;
+    margin-right: 40px;
+  }
+
+  .callback-form-submit {
+    width: 260px;
+    padding: 15px 20px;
+  }
+
+  .callback-form-input:last-child {
+    margin-right: 0;
   }
 }
