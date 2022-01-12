@@ -77,8 +77,6 @@ body {
 }
 
 /* COMMON */
-.mobile-element {
-}
 
 .tablet-element {
   display: none;
@@ -86,6 +84,10 @@ body {
 
 .desktop-element {
   display: none;
+}
+
+.mobile-element {
+  display: block;
 }
 
 .accent-btn {
@@ -140,6 +142,7 @@ body {
   pointer-events: none;
   display: block;
   background: var(--modal-bgd-dark);
+  z-index: 3;
 }
 
 .modal-active {
@@ -463,6 +466,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .front-page-my-video-btn .fa-play {
@@ -1429,5 +1433,26 @@ body {
     margin-top: 20px;
     width: 348px;
     z-index: 2;
+  }
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-main-content {
+    width: calc(50% + 100px);
+    justify-content: space-between;
+  }
+  .footer-my-profession {
+    margin-bottom: 0;
+  }
+  .request-received-container {
+    padding: 60px 130px 80px 130px;
+  }
+  .request-received-primary-msg {
+    width: 350px;
+  }
+  .project-modal-container {
+    padding: 95px;
   }
 }
