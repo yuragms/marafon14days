@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
   </head>
   <body>
     <!-- FRONT PAGE -->
@@ -849,18 +850,49 @@
       <!-- PERSONAL PROJECTS FULL STACK-->
 
       <div
-        class="modal project-modal modal-area-bgd"
+        class="modal project-modal modal-area-bgd modal-active"
         id="personal-project-full-stack"
       >
         <div class="project-modal-container modal-area-content">
           <i class="fas fa-times modal-close-btn"></i>
 
           <div class="project-modal-scrollable">
-            <img
-              src="img/projects/personal/full-stack.jpg"
-              alt="full stack project image 1"
-              class="project-modal-img"
-            />
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <img
+                  src="img/projects/personal/full-stack/full-stack-1.png"
+                  alt="full stack image 1"
+                  class="swiper-slide"
+                />
+                <img
+                  src="img/projects/personal/full-stack/full-stack-2.png"
+                  alt="full stack image 2"
+                  class="swiper-slide"
+                />
+                <img
+                  src="img/projects/personal/full-stack/full-stack-3.png"
+                  alt="full stack image 3"
+                  class="swiper-slide"
+                />
+                <img
+                  src="img/projects/personal/full-stack/full-stack-4.png"
+                  alt="full stack image 4"
+                  class="swiper-slide"
+                />
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
 
             <a
               href="https://fullstackonline.goit.ua"
@@ -1056,6 +1088,8 @@
     <script src="js/callback-form.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/animation-on-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
   </body>
 </html>
 

@@ -690,6 +690,11 @@ body {
   margin-bottom: 30px;
 }
 
+.swiper-container {
+  width: 800px;
+  height: auto;
+}
+
 /* TEAM PROJECT */
 
 .team-projects .container {
