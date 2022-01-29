@@ -81,11 +81,11 @@ body {
 /* COMMON */
 
 .tablet-element {
-  display: none;
+  display: none !important;
 }
 
 .desktop-element {
-  display: none;
+  display: none !important;
 }
 
 .mobile-element {
@@ -691,8 +691,9 @@ body {
 }
 
 .swiper-container {
-  width: 800px;
+  width: 300px;
   height: auto;
+  margin-bottom: 30px;
 }
 
 /* TEAM PROJECT */
@@ -1014,16 +1015,17 @@ body {
   }
 
   .tablet-element {
-    display: block;
-  }
-
-  .desktop-element {
+    display: block !important;
   }
 
   .front-page-my-name {
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 0;
+  }
+
+  .swiper-container {
+    width: 600px;
   }
 
   .front-page-profession {
@@ -1221,10 +1223,10 @@ body {
     max-width: var(--desktop-lg);
   }
   .tablet-element {
-    display: none;
+    display: none !important;
   }
   .desktop-element {
-    display: block;
+    display: block !important;
   }
   .front-page-profession {
     font-size: 70px;
@@ -1282,6 +1284,9 @@ body {
   }
   .front-page-my-info {
     order: 3;
+  }
+  .swiper-container {
+    width: 900px;
   }
   .front-page-my-decr {
     text-align: right;
