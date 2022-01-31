@@ -33,8 +33,6 @@ calculateSum();
 
 const calculatorForm = document.querySelector('.calculator-form');
 
-console.log(calculatorForm);
-
 calculatorForm.addEventListener('submit', function (event) {
   event.preventDefault();
   calculateSum();
@@ -59,11 +57,6 @@ function calculateSum() {
   );
   const websiteCartValue = convertCartOptionToPrice(websiteCart.value);
   const websiteReceptionValue = convertReceptionToPrice(websiteReception.value);
-
-  console.log(websiteTypeValue);
-  console.log(technologiesValue);
-  console.log(websiteCartValue);
-  console.log(websiteReceptionValue);
 
   const totalSum =
     websiteTypeValue +
